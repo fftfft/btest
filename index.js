@@ -11,7 +11,7 @@ const app = express()
 const port = process.env.PORT || 3001
 
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: yaml_data['host'],
   user: yaml_data['user'],
   password: yaml_data['password'],
   port : yaml_data['port'],
